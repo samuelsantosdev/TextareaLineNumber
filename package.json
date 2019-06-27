@@ -11,12 +11,15 @@
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "babel-loader": "8.0.0-beta.0",
+    "jsdom": "^15.1.1",
+    "testing": "^1.1.2",
     "webpack": "^4.35.0",
     "webpack-cli": "^3.3.5",
     "webpack-dev-server": "^3.7.2"
   },
   "scripts": {
     "dev": "webpack-dev-server --mode=development",
-    "build": "webpack --mode=production"
+    "build": "webpack --mode=production",
+    "test": "nodejs tests.js"
   }
 }
