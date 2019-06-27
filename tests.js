@@ -6,12 +6,18 @@ const fs = require('fs');
 const path = require('path');
 
 
+        
 function testCreate( callback ){
     
     try{
 
-        const html = fs.readFileSync(path.resolve(__dirname, './public/index.html'), 'utf8');
-        const dom = new JSDOM(html);
+        const js = fs.readFileSync(path.resolve(__dirname, './public/linesnumber.min.js'), 'utf8');
+        const dom = new JSDOM("<!DOCTYPE html><head></head><html><body><div><textarea id='test'></textarea></div><script>\
+        "+js+"\
+        document.getElementById('test').LinesNumber();\
+        </script>\
+        </body></html>");
+        
         return testing.success(callback);
 
     }

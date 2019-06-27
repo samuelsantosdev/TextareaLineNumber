@@ -20,6 +20,6 @@
   "scripts": {
     "dev": "webpack-dev-server --mode=development",
     "build": "webpack --mode=production",
-    "test": "nodejs tests.js"
+    "test": "webpack --mode=production && node tests.js"
   }
 }
