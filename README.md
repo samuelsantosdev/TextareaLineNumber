@@ -11,3 +11,5 @@
     document.getElementById("teste").LinesNumber(); //Must be a textarea
 </script>
 ```
+## Online example
+https://samuelsantosdev.github.io/TextareaLineNumber/
